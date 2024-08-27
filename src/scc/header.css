@@ -98,12 +98,6 @@
   white-space: nowrap;
 }
 
-.header-ul :hover{
-  border: 1px solid #9dbc53 ;
-  background-color: #cdf567;
-  color: #0d1117;
-}
-
 .header-a-start :hover{
   border: 1px solid #9dbc53 ;
   background-color: #cdf567;
