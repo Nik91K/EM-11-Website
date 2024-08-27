@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/scc/siderbar.css">
+    <link rel="stylesheet" href="src/scc/header.css">
+</head>
+<body>
+    <main>
+        <div class="sidebar-main-div" style="display: contents; box-sizing: border-box;">
+            <div class="div-site-sidebar">
+                <nav class="sidebar-nav">
+                    <div class="sidebar-nav-images">
+                        <div class="main-logo-div">
+                        <div class="img-logo-div">
+                                <img src="https://placehold.co/144x32/black/white" alt="">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="main-sidebar-div">
+                        <div class="link-to-list-div">
+                            <div class="list-text">
+                                <a href="https://github.com/Nik91K" class="link-to-git" target="_blank">
+                                    <div class="git-logo">
+                                    <img src="/public/images/git-logo.png" class="git-logo" alt="GitHub">
+                                    </div>
+                                    <span class="link-to-git-span">Link to my GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar-links-main">
+                            <div class="study-div-main">    
+                                <div class="list-div-text">
+                                    <button class="button button-list" onclick="toggleList('linkList1', this)">
+                                        <span class="button-list-text">
+                                            Study 
+                                        </span>
+                                        <span class="arrow" style="transform: rotate(180deg);">▼</span>
+                                    </button>
+                                    <div class="list show" id="linkList1">
+                                        <div class="list-div" ><a href="#" class="list-a "> <i class="fa-solid fa-rocket"></i> Course </a></div>
+                                        <div class="list-div" ><a href="#" class="list-a "> <i class="fa-solid fa-code"></i> Problems </a></div>
+                                        <div class="list-div" ><a href="#" class="list-a "> <i class="fa-solid fa-list-ul"></i> Survey </a></div>
+                                        <div class="list-div" ><a href="#" class="list-a "> <i class="fa-solid fa-gamepad"></i> Games </a></div>
+                                        <div class="list-div" ><a href="#" class="list-a "> <i class="fa-regular fa-circle-question"></i> Help </a></div>
+                                        <div class="list-div" ><a href="#" class="list-a "> <i class="fa-solid fa-socks"></i> Schedule </a></div>
+                                        <div class="list-div" ><a href="#" class="list-a "> <i class="fa-solid fa-microphone"></i> Internship </a></div>
+                                    </div>                      
+                                </div>                       
+                            </div> 
+                            <div class="community-div-main">
+                                <div class="list-div-text">
+                                    <button class="button button-list" onclick="toggleList('linkList2', this)">
+                                        <span class="button-list-text">
+                                            Community
+                                        </span>
+                                        <span class="arrow" style="transform: rotate(180deg);">▼</span>
+                                    </button>
+                                    <div class="list show" id="linkList2">
+                                        <div class="list-div"><a href="#" class="list-a "><i class="fa-solid fa-user-group"></i> Users </a></div>
+                                        <div class="list-div"><a href="#" class="list-a "><i class="fa-solid fa-comments"></i> Forum </a></div>
+                                        <div class="list-div"><a href="#" class="list-a "><i class="fa-solid fa-message"></i> Chat </a></div>
+                                        <div class="list-div"><a href="#" class="list-a "><i class="fa-regular fa-newspaper"></i> Articles </a></div>
+                                        <div class="list-div"><a href="#" class="list-a "><i class="fa-solid fa-flag"></i> Succes stories </a></div>
+                                        <div class="list-div"><a href="#" class="list-a "><i class="fa-solid fa-wave-square"></i> Actions</a></div>
+                                        <div class="list-div"><a href="#" class="list-a "><i class="fa-solid fa-smile"></i> Reviews </a></div>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                        <script>
+                            function toggleList(listId, button) {
+                                const list = document.getElementById(listId);
+                                const arrow = button.querySelector(".arrow");
+                                list.classList.toggle("show");
+                                arrow.style.transform = list.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
+                            }
+                        </script>
+                    </div>
+                    <div class="account-div-main">
+                        <a href="/registration/registration.html" class="account-link">
+                            <i class="fa-solid fa-door-open login-door"></i>
+                            <span class="login-span">Login</span> 
+                        </a>
+                    </div>
+                </nav>
+            </div>  
+        </div>
+        <div class="header">
+            <div class="main-header">
+                <div class="header-container">
+                    <div class="header-page-nav">
+                        <ul class="header-ul">
+                            <li class="header-li header-first-link">
+                                <a href="#" class="header-link">About course</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#" class="header-link">Peculiarities</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#" class="header-link">Training format</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#" class="header-link">Reviews</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#" class="header-link">Our graduates</a>
+                            </li>
+                        </ul> 
+
+                        
+                    </div> 
+                    <div class="header-link-start-main">
+                        <div class="header-link-start-hower">
+                            <a href="#" class="header-a-start">
+                                <span class="header-link-start-span"> Start studying!</span>
+                            </a>                   
+                        </div>
+                        <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
+                            <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                        </svg>
+                        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+                            <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                        </svg>
+                        <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
+                            <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                        </svg>
+                        
+                    </div>             
+                </div>
+            </div>    
+        </div>
+        
+        
+    </main>
+    <footer>
+    </footer>
+    <script src="https://kit.fontawesome.com/e44c6b1c65.js" crossorigin="anonymous"></script>
+</body>
+</html>
