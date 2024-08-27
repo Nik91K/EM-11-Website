@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-image: url(/public/images/green-and-black-background.jpg);
+}
+
 .main-top-hero-section {
     position: relative;
     margin: 0 auto;
