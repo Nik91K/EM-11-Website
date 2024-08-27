@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: "Montserrat Variable", sans-serif;
     background-image: url(/public/images/green-and-black-background.jpg);
 }
 
@@ -81,10 +82,13 @@ body{
 }
 
 .hero-rating{
+    float: left;
+    font-family: "Montserrat Variable", sans-serif;
     color: #8b949e;
 }
 
 .reviews-raiting{
     float: left;
     font-size: 30px;
+    color: #fff;
 }
