@@ -79,3 +79,11 @@ body{
     margin-left: 20px;
     width: 647px;
 }
+
+.hero-rating{
+    color: #8b949e;
+}
+
+.reviews-raiting{
+    float: left;
+}
