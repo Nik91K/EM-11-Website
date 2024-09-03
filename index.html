@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/scc/siderbar.css">
-    <link rel="stylesheet" href="src/scc/header.css">
-    <link rel="stylesheet" href="src/scc/main.css">
+    <link rel="stylesheet" href="./src/scc/siderbar.css">
+    <link rel="stylesheet" href="./src/scc/header.css">
+    <link rel="stylesheet" href="./src/scc/main.css">
+    <link rel="stylesheet" href="./src/scc/footer.css">
 </head>
 <body>
     <main>
@@ -15,8 +16,8 @@
                 <nav class="sidebar-nav">
                     <div class="sidebar-nav-images">
                         <div class="main-logo-div">
-                        <div class="img-logo-div">
-                                <img src="https://placehold.co/144x32/black/white" alt="">
+                            <div class="img-logo-div">
+                                <img src="https://placehold.co/144x32/black/white" alt="144x32" style="color: white;">
                             </div> 
                         </div>
                     </div>
@@ -25,7 +26,7 @@
                             <div class="list-text">
                                 <a href="https://github.com/Nik91K" class="link-to-git" target="_blank">
                                     <div class="git-logo">
-                                    <img src="/public/images/git-logo.png" class="git-logo" alt="GitHub">
+                                        <img src="./public/images/git-logo.png" class="git-logo" alt="GitHub">
                                     </div>
                                     <span class="link-to-git-span">Link to my GitHub</span>
                                 </a>
@@ -54,9 +55,7 @@
                             <div class="community-div-main">
                                 <div class="list-div-text">
                                     <button class="button button-list" onclick="toggleList('linkList2', this)">
-                                        <span class="button-list-text">
-                                            Community
-                                        </span>
+                                        <span class="button-list-text">Community</span>
                                         <span class="arrow" style="transform: rotate(180deg);">▼</span>
                                     </button>
                                     <div class="list show" id="linkList2">
@@ -81,7 +80,7 @@
                         </script>
                     </div>
                     <div class="account-div-main">
-                        <a href="/registration/registration.html" class="account-link">
+                        <a href="./registration/registration.html" class="account-link">
                             <i class="fa-solid fa-door-open login-door"></i>
                             <span class="login-span">Login</span> 
                         </a>
@@ -89,93 +88,189 @@
                 </nav>
             </div>  
         </div>
-        <div class="header">
-            <div class="main-header">
-                <div class="header-container">
-                    <div class="header-page-nav">
-                        <ul class="header-ul">
-                            <li class="header-li header-first-link">
-                                <a href="#" class="header-link">About course</a>
-                            </li>
-                            <li class="header-li">
-                                <a href="#" class="header-link">Peculiarities</a>
-                            </li>
-                            <li class="header-li">
-                                <a href="#" class="header-link">Training format</a>
-                            </li>
-                            <li class="header-li">
-                                <a href="#" class="header-link">Reviews</a>
-                            </li>
-                            <li class="header-li">
-                                <a href="#" class="header-link">Our graduates</a>
-                            </li>
-                        </ul>  
-                    </div> 
-                    <div class="header-link-start-main">
-                        <div class="header-link-start-hower">
-                            <a href="#" class="header-a-start">
-                                <span class="header-link-start-span"> Start studying!</span>
-                            </a>                   
-                        </div>
-                    </div>             
-                </div>
-            </div>    
-        </div>
-        <section class="main-top-hero-section">
-            <div class="hero-section-container">
-                <div class="hero-content">
-                    <div class="hero-top" style="font-weight: 400;">
-                        <div class="hero-title">
-                            <h1 hero-title-h1>Java courses online</h1>
-                        </div>
-                        <div class="hero-title-second">
-                            <span>Here you will become a programmer</span>
-                        </div>
-                        <div class="hero-desc">
-                            You will learn to program. Regardless of how old you are and what knowledge 
-                            you have. Programming, like riding a bike, is a skill, so practice is important. 
-                            Consider Java development courses from JavaRush to be your "exercise bike". 
-                            Practice writing code in Java online: at your own pace, with practice from the 
-                            first classes. Coding is not scary! Just start.
-                        </div>
+        <header>
+            <div class="header">
+                <div class="main-header">
+                    <div class="header-container">
+                        <div class="header-page-nav">
+                            <ul class="header-ul">
+                                <li class="header-li header-first-link">
+                                    <a href="#" class="header-link">About course</a>
+                                </li>
+                                <li class="header-li">
+                                    <a href="#" class="header-link">Peculiarities</a>
+                                </li>
+                                <li class="header-li">
+                                    <a href="#" class="header-link">Training format</a>
+                                </li>
+                                <li class="header-li">
+                                    <a href="#" class="header-link">Reviews</a>
+                                </li>
+                                <li class="header-li">
+                                    <a href="#" class="header-link">Our graduates</a>
+                                </li>
+                            </ul>  
+                        </div> 
+                        <div class="header-link-start-main">
+                            <div class="header-link-start-hower">
+                                <a href="#" class="header-a-start">
+                                    <span class="header-link-start-span"> Start studying!</span>
+                                </a>                   
+                            </div>
+                        </div>             
                     </div>
-                    <div class="hero-rating">
-                        <span class="first-reviews">
-                            <div class="reviews-raiting">
-                                <span>4.9</span>
-                            </div>
-                            <div class="reviews-score-stars">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            </div>
-                            <div class="reviews-score-count">
-                                <span>4900+ reviews</span>
-                            </div>
-                        </span>
-                        <span class="second-reviews">
-                            <div class="reviews-raiting">
-                                <span>30k+</span>
-                            </div>
-                            <div class="reviews-score-count">
-                                <span>працевлаштованих<br>випускників</span>
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div class="hero-img">
-                    <picture>
-                        <img src="https://placehold.co/647x543/black/white" alt="">
-                    </picture>
-                </div>
+                </div>    
             </div>
-            
-        </section>
-        
+        </header>
+        <div class="main-nackground-content-div">
+            <section class="main-top-hero-section">
+                <div class="hero-section-container">
+                    <div class="hero-content">
+                        <div class="hero-top" style="font-weight: 400;">
+                            <div class="hero-title">
+                                <h1 hero-title-h1>Java courses online</h1>
+                            </div>
+                            <div class="hero-title-second">
+                                <span>You'll become a programmer here</span>
+                            </div>
+                            <div class="hero-desc">
+                                You will learn to program. Regardless of how old you are and what knowledge 
+                                you have. Programming, like riding a bike, is a skill, so practice is important. 
+                                Consider Java development courses from JavaRush to be your "exercise bike". 
+                                Practice writing code in Java online: at your own pace, with practice from the 
+                                first classes. Coding is not scary! Just start.
+                            </div>
+                        </div>
+                        <div class="hero-rating">
+                            <div class="first-reviews">
+                                <div class="reviews-raiting">
+                                    <span>4.9</span>
+                                </div>
+                                <div class="reviews-score-stars">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                                <div class="reviews-score-count">
+                                    <span>4900+ reviews</span>
+                                </div>
+                            </div>
+                            <div class="second-reviews">
+                                <div class="reviews-raiting">
+                                    <span>30k+</span>
+                                </div>
+                                <div class="reviews-score-count">
+                                    <span>employed<br>graduates</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-section-button">
+                            <a class="hero-section-button-a" rel="external" role="link" href="#" target="_blank">
+                                <span class="hero-section-button-span">Let's start!</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <picture>
+                            <img src="https://placehold.co/647x543/black/white" alt="">
+                        </picture>
+                    </div>
+                </div>           
+            </section> 
+        </div>      
     </main>
     <footer>
+        <div class="footer-main-div">
+            <div class="footer-container">
+                <div class="footer-first-div-about">
+                    <div class="content-footer-div">
+                        <div class="footer-text-about">
+                            <div class="footer-about-logo">
+                                <img src="https://placehold.co/135x30/black/white" alt="">
+                            </div>
+                            <span>
+                                JavaRush is an online course to learn Java programming from scratch, 
+                                with the option to study independently or with a mentor. It contains 
+                                1,200 practical problems with one-click solution verification, Java 
+                                fundamentals theory and practice with modern tools and technologies, 
+                                as well as motivational features: games, surveys, mini-projects, and 
+                                articles on effective learning and the career of a Java developer.
+                            </span>
+                        </div>
+                        <div class="content-footer-links">
+                            <div class="footer-nav-section">
+                                <div class="footer-nav-header">
+                                    Self-study
+                                </div>
+                                <ul class="footer-nav-list">
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Programming courses</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Java course</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Subscriptions</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Help with tasks</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Game tasks</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav-section">
+                                <div class="footer-nav-header">
+                                    Self-study
+                                </div>
+                                <ul class="footer-nav-list">
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Programming courses</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Java course</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Subscriptions</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Help with tasks</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Game tasks</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav-section">
+                                <div class="footer-nav-header">
+                                    Self-study
+                                </div>
+                                <ul class="footer-nav-list">
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Programming courses</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Java course</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Subscriptions</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Help with tasks</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Game tasks</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-nav-section">
+                                <div class="footer-nav-header">
+                                    Self-study
+                                </div>
+                                <ul class="footer-nav-list">
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Programming courses</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Java course</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Subscriptions</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Help with tasks</a></li>
+                                    <li class="footer-nav-item"><a href="" class="footer-nav-link">Game tasks</a></li>
+                                </ul>
+                            </div>
+                            <!-- <script>
+
+                            </script> -->
+                        </div>
+                        <div class="footer-lang-div">
+                            <div class="lang-text-top">
+                                <span>Interface language</span>
+                            </div>
+                            <div class="list-div-choice">
+                                <select>
+                                    <option> Українська</option>
+                                    <option> English</option>
+                                    <option> Polish</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="footer-apps">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </footer>
     <script src="https://kit.fontawesome.com/e44c6b1c65.js" crossorigin="anonymous"></script>
 </body>
